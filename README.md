@@ -1,11 +1,74 @@
-# <center>Data Preparation Techniques (Non-ML & ML)</center>
-## <center>Two parts: 1 & 2</center>
+<!-- Source for creating Table of Contents in markdown [site](https://bitdowntoc.derlin.ch/) -->
+
+<div align="center">
+    <h1>Data Preparation Techniques (Non-ML & ML)</h1>
+    <h2>Two Parts: 1 & 2</h2>
+    <p>(Iteration 2 will come after Iteration 1)</p>
+    <h2>Topic: Air Quality Dataset Cleaning</h2>
+    <h3>Author: Ali Mir</h3>
+</div>
+
+<!-- # <center>Data Preparation Techniques (Non-ML & ML)</center>
+## <center>Two Parts: [1](#project---iteration-1) & [2](#project---iteration-2-ml-based-data-preparation-techniques)</center>
 <center>(Iteration 2 will come after the iteration 1)</center>
 
-## <center>Topic: Air Quality Dataset</center>
-### <center>Author: Ali Mir</center>
+## <center>Topic: Air Quality Dataset Cleaning</center>
+### <center>Author: Ali Mir</center> -->
 ______________________________________________________________________________
+Table of Contents:
 
+<small>
+
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+
+- [Project - Iteration 1](#project---iteration-1)
+- [About Dataset](#about-dataset)
+   * [Context](#context)
+   * [Content](#content)
+   * [Attributes](#attributes)
+- [Initial Data Cleaning](#initial-data-cleaning)
+- [Visualized Data Distribution Assessment](#visualized-data-distribution-assessment)
+- [Descriptive Statistics](#descriptive-statistics)
+- [Time Series Illustration](#time-series-illustration)
+- [Dropping Rows](#dropping-rows)
+- [Filling in Missed Values](#filling-in-missed-values)
+   * [Fill Using a Constant](#fill-using-a-constant)
+   * [Fill Using a Centrality Measurement](#fill-using-a-centrality-measurement)
+   * [Fill Using Interpolation Techniques](#fill-using-interpolation-techniques)
+- [Removing Outliers](#removing-outliers)
+   * [Interquartile Range Method](#interquartile-range-method)
+      + [Dropping](#dropping)
+   * [Standard Deviation Method](#standard-deviation-method)
+- [<center>Project - Iteration 2: ML-Based Data Preparation Techniques</center>](#project---iteration-2-ml-based-data-preparation-techniques)
+- [Part 1 - Addressing previous part's issues](#part-1---addressing-previous-parts-issues)
+- [Part 2 – Data scaling pre-assessment](#part-2--data-scaling-pre-assessment)
+- [Part 3 – Handling missing data and outliers](#part-3--handling-missing-data-and-outliers)
+   * [LinearRegression](#linearregression)
+   * [KNN Regression](#knn-regression)
+   * [Extracting Treated NaN Subset from the Baseline DataFrame](#extracting-treated-nan-subset-from-the-baseline-dataframe)
+   * [Fill NaNs Using the decided Regressor + Data Scalers](#fill-nans-using-the-decided-regressor--data-scalers)
+   * [Predictor Function](#predictor-function)
+   * [Plot Linear-Based Modified DataFrame vs. Original DataFrame](#plot-linear-based-modified-dataframe-vs-original-dataframe)
+   * [Plot KNN-Based Regression Modified DataFrame vs. Original DataFrame](#plot-knn-based-regression-modified-dataframe-vs-original-dataframe)
+   * [Plot KNN-Based Regression Modified DataFrame vs. BaseLine DataFrame](#plot-knn-based-regression-modified-dataframe-vs-baseline-dataframe)
+   * [BoxPlot Visualization of Different DataFrames](#boxplot-visualization-of-different-dataframes)
+- [Part 4 – Supervised Learning Problem design](#part-4--supervised-learning-problem-design)
+   * [Correlation Matrix](#correlation-matrix)
+   * [Baseline Regression Model](#baseline-regression-model)
+   * [Enhancing Quality of Results](#enhancing-quality-of-results)
+   * [Other Approaches](#other-approaches)
+      + [Data Discretization](#data-discretization)
+         - [Strategy: Uniform](#strategy-uniform)
+         - [Strategy: Quantile](#strategy-quantile)
+      + [Grid Searching Hyperparameters](#grid-searching-hyperparameters)
+- [Feature Selection Using Correlation Matrix](#feature-selection-using-correlation-matrix)
+- [<center>The Fortunate End</center>](#the-fortunate-end)
+
+<!-- TOC end -->
+<small>
+
+______________________________________________________________________________
+# Project - Iteration 1
 # About Dataset
 
 ## Context
@@ -1960,19 +2023,15 @@ As it is clear from the above plots, outliers are rare, thus having no statistic
 ---
 ---
 
-# <center>COMP 6981 - Data Preparation Techniques</center>
-## <center>Project - Iteration 2</center>
-
-## <center>Topic: Air Quality Dataset</center>
+# <center>Project - Iteration 2: ML-Based Data Preparation Techniques</center>
 
 From here on, we explore further onto our dataset. This section is the continuation of the previous one, so our dataset and context remains constant. We let the previous part remain because most of our useful functions are already predefined in the previous iteration.
 
 <!-- OK. We make a copy of our original dataframe having outliers and missing data. Next we can treat them regarding the wanted parts below. -->
 ---
 
-# Part 1 - Addressing instructor’s comments
-
-Nothing to be added to our project (iteration 1). So we start this 2nd iteration with 10 marks already.
+# Part 1 - Addressing previous part's issues
+Nothing to be added to our project (iteration 1).
 
 ---
 
