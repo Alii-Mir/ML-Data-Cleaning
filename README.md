@@ -18,10 +18,9 @@ ___
 ## <center>Topic: Air Quality Dataset Cleaning</center>
 ### <center>Author: Ali Mir</center> -->
 ______________________________________________________________________________
-Table of Contents:
+## Table of Contents:
 
 <small>
-
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 
 - [Project - Iteration 1](#project---iteration-1)
