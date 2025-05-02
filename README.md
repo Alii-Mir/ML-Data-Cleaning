@@ -2,11 +2,14 @@
 
 <div align="center">
     <h1>Data Preparation Techniques (Non-ML & ML)</h1>
-    <h2>Two Parts: 1 & 2</h2>
-    <p>(Iteration 2 will come after Iteration 1)</p>
     <h2>Topic: Air Quality Dataset Cleaning</h2>
     <h3>Author: Ali Mir</h3>
 </div>
+
+___
+
+### Two Parts: [1](#project---iteration-1) & [2](#project---iteration-2-ml-based-data-preparation-techniques)
+*(Iteration 2 will come after Iteration 1)*
 
 <!-- # <center>Data Preparation Techniques (Non-ML & ML)</center>
 ## <center>Two Parts: [1](#project---iteration-1) & [2](#project---iteration-2-ml-based-data-preparation-techniques)</center>
